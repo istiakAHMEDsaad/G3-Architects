@@ -6,3 +6,43 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared Style Class */
+/* Custom Dark 2*/
+.text-dark2{
+    color: #424242;
+}
+/* Custom Dark 3 */
+.text-dark3{
+    color: #727272;
+}
+/* Light Background Color */
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* Display Flex */
+.display-flex{
+    display: flex;
+}
+
+
+/* Navbar */
+.nav-links{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.navbar{
+    justify-content: space-between;
+}
+.banner,
+.navbar{
+    border: 1px solid black;
+    width: 1440px;
+    margin: 0 auto;
+}
