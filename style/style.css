@@ -83,7 +83,7 @@
 
 /* *********************Banner********************* */
 .banner-content{
-    max-width: 862px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -116,10 +116,42 @@
 .feature-title>span:nth-child(1){
     font-weight: 500;
 }
+.team-description{
+    line-height: 1.6rem;
+}
+
+
 /* ---------------------------------------Media Query--------------------------------------- */
+/* small device */
 @media screen and (max-width: 576px){
+    .nav-link{
+        font-size: 25px;
+    }
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+    .nav-item{
+        /* margin: 0 auto; */
+        margin-bottom: 15px;
+    }
+    .teams,
     .navbar,
     .nav-links{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 0 auto;
     }
 }
