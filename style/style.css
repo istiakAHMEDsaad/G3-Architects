@@ -156,7 +156,22 @@
     justify-content: center;
     align-items: center;
 }
-
+#btn-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#btn-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#btn-small{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.feature-architect img{
+    width: 100%;
+}
 
 
 
@@ -189,7 +204,7 @@
 }
 
 
-/* *********************Sponser Style********************* */
+/* *********************Sponsors Style********************* */
 .sponsor-info{
     max-width: 540px;
     margin: 50px auto;
@@ -206,7 +221,22 @@
 .sponser-companies>img{
     filter: grayscale(100%);
 }
+.our-sponsors{
+    margin-bottom: 130px;
+}
 
+
+/* *********************Footer Section********************* */
+.ft-clr{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 244, 231, 1);
+}
+.ft-clr>p{
+    padding: 2.4rem 25.6rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
 
 /* ---------------------------------------Media Query--------------------------------------- */
 /* small device */
@@ -218,6 +248,7 @@
         /* margin: 0 auto; */
         margin-bottom: 15px;
     }
+    .feature,
     .teams,
     .navbar,
     .nav-links{
@@ -239,9 +270,26 @@
         gap: 50px;
         justify-items: center;
     }
+    #btn-badge{
+        margin: 20px 0 0 20px;
+    }
+    #center-please{
+        margin: 0 auto;
+    }
+    .feature-architect{
+        margin: 0 auto;
+    }
+    .ft-clr{
+        width: auto;
+        /* padding: auto; */
+    }
+    .ft-clr>p{
+        padding: 0;
+    }
 }
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px){
+    .feature,
     .teams{
         flex-direction: column;
     }
@@ -264,5 +312,20 @@
     .sponser-companies{
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
+    }
+    #btn-badge{
+        margin-left: auto;
+        margin-bottom: auto;
+        padding: 20px 35px;
+    }
+    #btn-year{
+        font-size: 2rem;
+    }
+    .ft-clr{
+        width: auto;
+        /* padding: auto; */
+    }
+    .ft-clr>p{
+        padding: 20px 0;
     }
 }
