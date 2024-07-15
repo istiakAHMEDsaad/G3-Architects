@@ -133,6 +133,32 @@
     line-height: 1.6rem;
 }
 
+/* *********************Features Section********************* */
+#special-border{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
+}
+.shadow-card{
+    /* border: 1px solid black; */
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.shadow-card>h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.feature{
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* *********************Some Facts Section********************* */
 .facts-container{
