@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* *{
+    margin: 0 auto;
+    padding: 0;
+} */
+
 .work-sans-regularFont {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -7,7 +12,12 @@
   font-style: normal;
 }
 
-/* Shared Style Class */
+
+/* ---------------------------------------Shared Style Start--------------------------------------- */
+/* Custom Dark 1 */
+.text-dark1{
+    color: rgba(19, 19, 19, 1);
+}
 /* Custom Dark 2*/
 .text-dark2{
     color: #424242;
@@ -16,33 +26,100 @@
 .text-dark3{
     color: #727272;
 }
+/* Color Primary */
+.text-primary{
+    color: rgba(255, 144, 14, 1);
+}
 /* Light Background Color */
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
-
-
 /* Display Flex */
 .display-flex{
     display: flex;
 }
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    color: #FFFFFF;
+    border-radius: .5rem;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main>section{
+    margin-top: 85px;
+}
 
+/* ---------------------------------------Shared Style Finished--------------------------------------- */
 
-/* Navbar */
-.nav-links{
+/* *********************Navbar********************* */
+.nav-item{
     list-style: none;
+    margin-right: 30px;
 }
 .nav-link{
     text-decoration: none;
     font-weight: 500;
-    margin-right: 30px;
 }
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 .banner,
 .navbar{
-    border: 1px solid black;
-    width: 1440px;
+    /* border: 1px solid black; */
+    max-width: 1440px;
     margin: 0 auto;
+}
+.brand-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+}
+
+/* *********************Banner********************* */
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-image{
+    width: 100%;
+}
+
+
+/* *********************Team Section********************* */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 73px;
+    max-width: 573px;
+}
+.feature-title{
+    font-size: 2.8rem;
+}
+.feature-title>span:nth-child(1){
+    font-weight: 500;
+}
+/* ---------------------------------------Media Query--------------------------------------- */
+@media screen and (max-width: 576px){
+    .navbar,
+    .nav-links{
+        flex-direction: column;
+    }
 }
